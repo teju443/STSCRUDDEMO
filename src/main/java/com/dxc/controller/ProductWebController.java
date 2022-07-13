@@ -19,6 +19,12 @@ public class ProductWebController {
 	@Autowired
 	ProductController productController;
 	
+	@GetMapping("/message")
+	public String getmessage()
+	{
+		return "Welcome!!!";
+	}
+	
 	@GetMapping("/")
 	public String getAllProducts(Model model)
 	{
