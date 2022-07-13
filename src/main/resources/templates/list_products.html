@@ -16,7 +16,7 @@
   <div class="card-body">
   	
   	<div th:switch="${products}" class="container my-4">
-  	<p> <a href="/new_product" class ="btn btn-warning">Add Product</a>  </p>
+  	<p> <a href="/create_new_Product" class ="btn btn-warning">Add Product</a>  </p>
   	<div class = "col md-4">
   	<h2 th:case="null">No product found!</h2>
   	<div th:case="*">

@@ -33,11 +33,11 @@ public class ProductWebController {
 		return "list_products";
 	}
 	
-	@GetMapping("/new_product")
+	@GetMapping("/create_new_Product")
 	public String addProduct(Product product,Model model)
 	{
 		model.addAttribute("prod", product);
-		return "new_product";
+		return "new_Product";
 	}
 	
 	@PostMapping(value="/save_new")
